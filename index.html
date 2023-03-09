@@ -1,0 +1,316 @@
+<!-- Archivo: index.html
+Escrito por: Alberto Nieto Rocha
+Proyecto: Plantilla Web Para PT -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>DaCapoDocs</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar__menu">
+      <!-- Logo del sitio -->
+      <li class="sidebar__item">
+        <div class="logo">
+          <img class="logo__img" src="assets/img/logo.png">
+          <!-- Título del sitio -->
+          <a class="sidebar__titulo" href="#">
+            <span class="sidebar__titulo sidebar__titulo-destacado">Ejemplo
+              <span class="sidebar__titulo sidebar__titulo-alternativo">Docs</span>
+            </span>
+          </a>
+        </div>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link active" href="#about">
+          <i class='bx bxs-directions sidebar__icon'></i>
+          <span class="sidebar__text">Sobre el proyecto</span>
+        </a>
+        <ul class="sidebar__submenu">
+          <li class="submenu__item">
+            <a class="submenu__link" href="#a1">
+              <span class="submenu__text">Submenu 1</span>
+            </a>
+          </li>
+          <li class="submenu__item">
+            <a class="submenu__link" href="#a2">
+              <span class="submenu__text">Submenu 2</span>
+            </a>
+          </li>
+          <li class="submenu__item">
+            <a class="submenu__link" href="#a3">
+              <span class="submenu__text">Submenu 3</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="#components">
+          <i class='bx bxs-extension bx-rotate-270 sidebar__icon'></i>
+          <span class="sidebar__text">Componentes</span>
+        </a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="#downloads">
+          <i class='bx bxs-download sidebar__icon'></i>
+          <span class="sidebar__text">Descargas</span>
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <!-- Menú superior -->
+  <nav id="navbar" class="navbar">
+    <!-- Contenido izquierda -->
+    <div class="navbar__container navbar__container-left">
+      <a class="navbar__link navbar__button-left navbar__button-disabled">
+        <i class='bx bx-menu bar__icono-left'></i>
+      </a>
+    </div>
+    <!-- Contenido derecha -->
+    <div class="navbar__container navbar__container-right">
+      <ul class="navbar__ul">
+        <li class="navbar__li">
+          <a class="navbar__link">
+            <i id="theme-enabled" class='bx bx-brightness-half bar__icono'></i>
+            <span class="navbar__texto">Tema</span>
+          </a>
+          <!-- Menú desplegable -->
+          <div id="navbar__theme-switcher" class="navbar__desplegable navbar__desplegable-disabled">
+            <a class="navbar__desplegable__link navbar__theme-enabled">
+              <i class='bx bx-brightness-half bar__icono'></i>
+              <span id="theme-0" class="navbar__texto">SO por defecto</span>
+            </a>
+            <a class="navbar__desplegable__link">
+              <i class='bx bx-sun bar__icono'></i>
+              <span id="theme-1" class="navbar__texto">Claro</span>
+            </a>
+            <a class="navbar__desplegable__link">
+              <i class='bx bx-moon bar__icono'></i>
+              <span id="theme-2" class="navbar__texto">Oscuro</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <!-- Botón probar -->
+      <a class="button button-highlighted">Probar</a>
+    </div>
+  </nav>
+  <!-- Contenido de la página -->
+  <main id="main" class="main">
+    <!-- Sección sobre el proyecto -->
+    <!-- Encabezado con nombre del proyecto -->
+    <div id="about" class="card">
+      <h1 class="card__title">Ejemplo</h1>
+      <p class="card__text">Do sunt cillum Lorem laborum aliquip non consectetur dolor</p>
+    </div>
+    <!-- Información sobre el proyecto -->
+    <section>
+      <h1 class="title">Sobre el proyecto <span class="date">Termino: x de febrero 20XX</span></h1>
+      <p>
+        Exercitation consequat excepteur dolore exercitation enim ad fugiat proident exercitation ut minim id sint.
+        Velit magna enim in ad. Ullamco laborum irure proident elit. Consequat laborum dolor fugiat laborum consectetur
+        non enim laborum voluptate eu fugiat nisi dolore ex.Officia qui do fugiat voluptate ullamco tempor nisi eu
+        proident aliquip deserunt. Voluptate velit eiusmod deserunt et nulla culpa irure aliqua. Velit in excepteur
+        irure officia minim aute. Incididunt eu ad aute mollit anim laboris deserunt do voluptate. Commodo amet fugiat
+        enim enim. Ea nulla Lorem anim cillum sint. Veniam irure consequat nulla nostrud ut.
+      </p>
+      <!-- Keywords -->
+      <h3>Keywords</h3>
+      <div class="keywords">
+        <ul>
+          <li class="keywords__item"><i class='bx bxs-circle circle'></i>Veniam</li>
+          <li class="keywords__item"><i class='bx bxs-circle circle'></i>Nulla</li>
+          <li class="keywords__item"><i class='bx bxs-circle circle'></i>Voluptate</li>
+          <li class="keywords__item"><i class='bx bxs-circle circle'></i>Lorem</li>
+          <li class="keywords__item"><i class='bx bxs-circle circle'></i>Commodo</li>
+        </ul>
+      </div>
+      <!-- Datos estudiante -->
+      <h3>Alumno</h3>
+      <p>Nombre Apellido1 Apellido2</p>
+      <h3>Matrícula</h3>
+      <p>XXXXXXXXXX</p>
+      <!-- Datos de profesorado -->
+      <h3>Asesor</h3>
+      <a class="link" href="#" target="_blank" rel="external">Dr. Nombre SegNombre Apellido1 Apellido2<i
+          class='bx bx-link-external'></i></a>
+      <h3>Asesora</h3>
+      <a class="link" href="#" target="_blank" rel="external">Dra.
+        Nombre Apellido1 Apellido2<i class='bx bx-link-external'></i></a>
+      <h2 id="a1">Submenu 1</h2>
+      <p>
+        Dolore esse dolore sunt cupidatat aute et velit qui proident elit et fugiat ullamco ad. Eiusmod aute amet Lorem
+        do laboris. Nisi eu voluptate amet est tempor esse mollit duis ipsum laboris quis quis.
+      </p>
+      <!-- Imágenes -->
+      <div class="image">
+        <img class="image__item" src="assets/img/img1.jpg" />
+        <p class="image__descriptor">
+          Qui proident elit et fugiat.
+        </p>
+      </div>
+      <figure class="image">
+        <img class="image__item" src="assets/img/img2.jpg" />
+        <figcaption>
+          <p class="image__descriptor">
+            Sunt amet ex nostrud cupidatat quis ullamco laborum voluptate dolore elit.
+          </p>
+        </figcaption>
+      </figure>
+      <h2 id="a2">Submenu 2</h2>
+      <figure class="image">
+        <img class="image__item" src="assets/img/img3.png" />
+        <figcaption>
+          <p class="image__descriptor">Irure eu pariatur irure sunt nisi sunt sit voluptate nulla dolore incididunt.</p>
+        </figcaption>
+      </figure>
+      <h2 id="a3">Submenu 3</h2>
+      <p>Eu elit sit voluptate elit consequat quis aliquip nostrud incididunt aliqua. Nulla eu incididunt voluptate
+        veniam qui ipsum eu eiusmod sint. Eiusmod labore amet in sint. Sint consequat magna eiusmod quis reprehenderit
+        et enim minim fugiat mollit est.</p>
+      <p>Velit eu minim aute culpa laborum sit elit laboris consequat aliqua nostrud velit minim enim. Tempor
+        adipisicing nostrud nulla Lorem Lorem labore cillum occaecat culpa. Laborum pariatur culpa dolore incididunt
+        sint eiusmod aute ea voluptate.</p>
+      <hr />
+    </section>
+    <!-- Sección componentes -->
+    <section id="components">
+      <h2 class="title">Componentes</h2>
+      <div class="components">
+        <!-- Python card -->
+        <div class="components__card">
+          <img class="components__img" src="assets/img/componentes/python.png" />
+          <div class="components__info">
+            <b>Python</b>
+            <p class="info__text">Como lenguaje de programación principal</p>
+            <a href="https://www.python.org/" target="_blank" rel="external" class="button button-right">Ir al
+              sitio
+              oficial</a>
+          </div>
+        </div>
+        <!-- Flask card -->
+        <div class="components__card">
+          <img class="components__img" src="assets/img/componentes/flask.png" />
+          <div class="components__info">
+            <b>Flask</b>
+            <p class="info__text">Se utilizó para la construcción del sitio web. Junto con HTML, CSS y
+              Javascript</p>
+            <a href="https://flask.palletsprojects.com/en/2.2.x/" target="_blank" rel="external"
+              class="button button-right">Ir
+              al sitio oficial</a>
+          </div>
+        </div>
+        <!-- MySQL card -->
+        <div class="components__card">
+          <img class="components__img" src="assets/img/componentes/mysql.png" />
+          <div class="components__info">
+            <b>MySQL</b>
+            <p class="info__text">Se utilizó para gestionar la base de datos</p>
+            <a href="https://www.mysql.com/" target="_blank" rel="external" class="button button-right">Ir al sitio
+              oficial</a>
+          </div>
+        </div>
+        <!-- Python AgentSpeak card -->
+        <div class="components__card">
+          <img class="components__img" src="assets/img/componentes/pypi.png" />
+          <div class="components__info">
+            <b>Python-AgentSpeak</b>
+            <p class="info__text">Un interprete del lenguaje <em>Jason</em>, para el lenguaje
+              <em>Python</em>
+            </p>
+            <a href="https://pypi.org/project/agentspeak/" target="_blank" rel="external" class="button button-right">Ir
+              al
+              sitio oficial</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
+    <!-- Sección descargas -->
+    <section id="downloads">
+      <h2 class="title">Descargas</h2>
+      <p>En esta sección se encuentran los documentos producidos durante el proyecto.</p>
+      <table class="table__downloads">
+        <tr>
+          <td class="table__td-left"><img class="table__icon" src="assets/img/pdf.png" />Cartel</td>
+          <td>
+            <a href="assets/files/#" download="Ejemplo_Cartel_PT1_Matrícula" class="button" target="_blank">Descargar<i
+                class='bx bxs-download icon__downloads'></i></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__td-left"><img class="table__icon" src="assets/img/pdf.png" />Documento Final</td>
+          <td>
+            <a href="assets/files/#" downloads="Ejemplo_Documento_Final_PT3_Matrícula" class="button"
+              target="_blank">Descargar<i class='bx bxs-download icon__downloads'></i></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__td-left"><img class="table__icon" src="assets/img/pdf.png" />Presentación Final
+          </td>
+          <td>
+            <a href="assets/files/#" download="Ejemplo_Presentación_PT3_Matrícula" class="button"
+              target="_blank">Descargar<i class='bx bxs-download icon__downloads'></i></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__td-left"><img class="table__icon" src="assets/img/pdf.png" />Artículo</td>
+          <td>
+            <a href="assets/files/#" download="Ejemplo_Artículo_Matrícula" class="button" target="_blank">Descargar<i
+                class='bx bxs-download icon__downloads'></i></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__td-left"><img class="table__icon" src="assets/img/pdf.png" />Presentación
+            Artículo</td>
+          <td class="table__td-right">
+            <a href="assets/files/DaCapoPresentationArticle.pdf" download="Ejemplo_Presentación_Artículo_Matrícula"
+              class="button" target="_blank">Descargar<i class='bx bxs-download icon__downloads'></i></a>
+          </td>
+        </tr>
+      </table>
+      <hr />
+    </section>
+  </main>
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__item">
+        <a href="https://www.uam.mx/" target="_blank">
+          <img class="footer__image" src="assets/img/variacion6Cua.png" />
+        </a>
+      </div>
+      <div class="footer__item">
+        <a href="http://dccd.cua.uam.mx/inicio" target="_blank">
+          <img class="footer__image" src="assets/img/logoCCD.png" />
+        </a>
+      </div>
+      <div class="footer__item">
+        <a href="http://dccd.cua.uam.mx/tecnologias" target="_blank">
+          <img class="footer__image" src="assets/img/tsi_horizontal.png" />
+        </a>
+      </div>
+      <!-- No quites esto  -->
+      <hr class="footer__line" />
+      <p class="info">Creada por Alberto Nieto Rocha, inspirada en <a
+          href="https://themes.3rdwavemedia.com/bootstrap-templates/product/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/"
+          target="_blank">CoderDocs</a> y <a href="https://bootstrapmade.com/demo/iPortfolio/"
+          target="_blank">iPortfolio</a>.
+      </p>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+
+</html>
